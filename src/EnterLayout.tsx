@@ -22,6 +22,7 @@ const EnterLayout = ({ pin, styles, mode, textOptions, options, onSwitchMode, on
     const [showError, setShowError] = useState(false);
 
     async function onNumberPress(value: string) {
+        console.log("huhu");
         const newPin = (value == 'delete') ?
             (curPin.substring(0, curPin.length - 1)) :
             (curPin + value);
